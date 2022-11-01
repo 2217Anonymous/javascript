@@ -1,28 +1,30 @@
-let user = {
+let user1 = {
     name        : "Venkat",
     age         : 26,
     intrest     : ["Cricket","Computer"],
-    address     : {
-        city    : 'Tiruppur',
-        state   : 'TN',
-    },
+    
     greetings : function(){
         let msg = `My Name is ${this.name},i love ${this.intrest[0]} & ${this.intrest[1]}`
         console.log(msg);
     }
 };
 
-// let another = Object.assign({},user)
- 
-let another = {
-    ...user
+let userDetails={
+    city    : 'Tiruppur',
+    state   : 'TN',
 }
-console.log(another.greetings);
-// let data = user
-// console.log(data.address);
 
-// let another = {}
-// for(let a in user){
-//     another[a] = user[a]
+// for(let dt in userDetails){
+//     user1[dt] = userDetails[dt]
 // }
-// console.log(another);
+
+// console.log(user1);
+// console.log(userDetails);
+
+user1 = Object.assign({},userDetails)
+console.log(userDetails);
+
+// user1 = {
+//     ...userDetails
+// }
+// console.log(user1);
