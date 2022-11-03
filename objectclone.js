@@ -40,8 +40,6 @@ const userDt = [
     },
 ]
 
-let res = userDt.find(function(userDt){
-    return userDt.name = "Banana";
-})
+let res = userDt.find((userDt)=> userDt.name = "Banana")
 
 console.log(res);
