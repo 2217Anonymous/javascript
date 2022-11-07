@@ -59,3 +59,19 @@ function CreatePerson(username){
 
 let Person = new CreatePerson("Venkat");
 Person.greeting();
+
+
+let dts = {
+    name : "Anonymous",
+    gretting(){
+        console.log(`Hi ${this.name} Welcome 😍`);
+    }
+}
+
+for(dt in dts)
+    console.log(dts[dt]);
+
+let obj = Object.entries(dts)
+
+for(dt of obj)
+    console.log(dt);
