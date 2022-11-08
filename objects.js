@@ -17,7 +17,7 @@ let User = {
 
 User.welcome();
 
-//Factory Function
+//Factory Function 
 
 function createUser(name){
     return {
@@ -40,5 +40,7 @@ function createUser(name){
 let Username = createUser("Venkat")
 
 console.log(Username.name);
+
+console.log(createUser("Anonymous"));
 
 console.log(createUser("Sakthi").welcome());
