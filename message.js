@@ -135,3 +135,12 @@ for(let dt in datas){ //key[fname,lname,age]
     console.log(dt);
     console.log(`key ${dt} : ${datas[dt]}`);
 }
+
+let i=1;
+
+do{
+    if(i%2 == 0){
+        console.log("This is Even Number:",i);
+    }
+    i++
+}while(i<=10)
