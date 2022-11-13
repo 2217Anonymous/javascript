@@ -14,6 +14,8 @@ const New_Cart      = ["Helmet","Gloves"]
 const Shopping = [{
     iteam : "Tennis Ball",
 }]
+
 let Order = Old_Cart.concat(New_Cart,...Shopping)
 console.log(Order);
 
+Order.forEach((data,dataIndex) => console.log(data))
