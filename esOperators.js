@@ -1,7 +1,8 @@
 let name = "Venkat"
-fname = name //Deep Copy
+fname = name //Deep Copy value
+fname="sakthi"
 console.log("-------------------------------------");
-console.log('Full Name :',fname);
+console.log(`Fiest Name : ${name} Last Name : ${fname}`);
 console.log("-------------------------------------");
 let a = 26
 Age = a //Deep Copy
@@ -14,20 +15,27 @@ let obj = {
     age:26,
     dob : 1996
 }
-person = obj // shallo Copy
+let person = {...obj} // shallo Copy memory
+person.name = "Sakthi";
 console.log("-------------------------------------");
+console.log(obj);
 console.log(person);
 console.log("-------------------------------------");
 
+
+
+
 function personData(a,b,...args){
+    
     console.log("-------------------------------------");
     for(let c of args){
         console.log(c)
     }
     console.log("-------------------------------------");
-    
+
     return a.name + ' ' + b.name
 }
+
 let obj1 = [
     {
         name:"Venkat",
