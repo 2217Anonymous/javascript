@@ -1,13 +1,12 @@
-let map = new WeakMap();
-let obj1 = {
-    name : "Venkat"
+const map = new Map()
+let abc = {
+    user : "Anonymous"
 }
 
-function counter(abc){
-    let count = map.get(abc) || 0;
-    map.set(abc,count + 1)
+function counter(obj){
+    let count = map.get(obj) || 0;  
+    map.set(obj,count + 1)
 }
-
-let result = counter(obj1)
-obj1 = null
-console.log(obj1);
+counter(abc)
+abc = null;
+map.forEach((value,key)=>{console.log(`Kay ${key.user} value:${value}`)})
