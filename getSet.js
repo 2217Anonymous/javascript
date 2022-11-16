@@ -24,3 +24,24 @@ User.display;
 User.emailid = "venkateshwaran.sort@gmail.com";
 User.uname = "Venkateshwaran";
 User.display
+
+
+let Employee = {
+    fname : "Tj",
+    lname : 'Sakthi',
+    get fullname(){
+        return `Full Name : ${Employee.fname} ${Employee.lname}`;
+    },
+    set fullname(name){
+        let splitName = name.split(" ")
+        this.fname = splitName[0]
+        this.lname = splitName[1]
+    }
+}
+console.log("-----------------------------------------------------------------------------------------");
+console.log(`Get Name : ${Employee.fullname}`);
+console.log("-----------------------------------------------------------------------------------------");
+Employee.fullname = "Venkat Anonymous";
+console.log("-----------------------------------------------------------------------------------------");
+console.log(`Set Name ${Employee.fullname}`);
+console.log("-----------------------------------------------------------------------------------------");
