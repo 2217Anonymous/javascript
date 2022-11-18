@@ -17,7 +17,6 @@ class Person{
         this.userName = value
     }
 }
-
 let User = new Person("anonymous",'2217@n@nym@u$','venkatanonymous248@gmail.com','7530008253')
 
 User.display;
@@ -35,7 +34,7 @@ let Employee = {
     set fullname(name){
         let splitName = name.split(" ")
         this.fname = splitName[0]
-        this.lname = splitName[1]
+        this.lname = splitName[1] ?? "";
     }
 }
 console.log("-----------------------------------------------------------------------------------------");

@@ -76,7 +76,7 @@ const firstDt = document.querySelector(".list-group :last-child")
 // firstDt.replaceWith(li,firstDt)
 
 const dublicateBtn = document.getElementById("resync")
-const duplicateEl   = document.getElementById("duplicate")
+const duplicateEl  = document.getElementById("duplicate")
 
 dublicateBtn.addEventListener("click",() =>{
     duplicateEl.innerHTML = "";
@@ -113,7 +113,7 @@ function removeItem(event){
 }
 
 
-for(let i=1000;i>=0;i--){
+for(let i=10;i>=0;i--){
     if(i % 2 == 0){
         console.log(`This is Even Number ${i}`);
     }
@@ -144,3 +144,11 @@ do{
     }
     i++
 }while(i<=10)
+
+let continer1 = document.getElementsByClassName("continer")
+console.log(continer1);
+let heading = document.createElement("h1")
+heading.textContent = "Anonymous World"
+const div = document.createElement("div")
+div.className = "alert";
+console.log(div);
