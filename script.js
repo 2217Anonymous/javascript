@@ -6,33 +6,34 @@ let users = {
 }
 
 
-let arrayData = ['bat','ball',users]
+//Factory Function
 
-function check(value){
-    let dtd = arrayData.includes(value)
-    if(dtd==true){
-        console.log(arrayData.indexOf(value));
-    }
-    else{
-        console.log("Data missing");
+function myFunction(data1,data2){
+    return {
+        fname       : data1,
+        lname       : data2,
+        email       : 'venkat@gmail.com',
+        password    : '2217@anonymous',
+        getFullname(){
+            console.log(`Full Name : ${this.fname} ${this.lname}`);
+        }
     }
 }
 
-check("ball")
+let setName = myFunction("Venkat","Anonymous")
+setName.getFullname()
 
+//Constructor Function
 
+function Myfunction(data1,data2){
+    this.uname = data1,
+    this.password = data2,
+    this.getUserData = function(){
+        console.log(`Username : ${this.uname} 
+Password : ${this.password}`);
+    }
+}
 
-// let data = `my name is ${users.fname} and this is my email id ${users.email} then my password ${users.password}`
-// console.log(data);
+let userData = new Myfunction("Anonymous","2217@Anonymous")
+userData.getUserData()
 
-// console.log('---------------------------------------------------------')
-// console.log(data.slice(11,25).toUpperCase())
-// console.log(data.slice(50,66))
-// console.log(data.slice(-14))
-// console.log('---------------------------------------------------------')
-// // for(let user of Object.entries(users)){
-// //     let dt = user
-// //     console.log("---------------------------------------------------");
-// //     console.log(dt[1].toUpperCase());
-// //     console.log("---------------------------------------------------");
-// // }
