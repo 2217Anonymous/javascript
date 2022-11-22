@@ -1,39 +1,81 @@
-let users = {
-    fname       : 'venkateshwaran',
-    lname       : 'Venkat',
-    email       : 'venkat@gmail.com',
-    password    : '2217@anonymous'
+let row = 6;
+let string = "";
+console.log(string +="venkat");
+
+let pattern = function(){
+
+    for(let i=1;i<=row;i++){                    
+        for(k=1;k<=(row-i);k++){        
+            document.write("&nbsp;")    
+        }                               
+        for(j=1;j<=i;j++){              
+             document.write("❤" )         
+        }                               
+        document.write("<br/>")     
+    }
+
+    //      *
+    //     * * 
+    //    * * *
+    //   * * * *
+    //  * * * * *
 }
 
+pattern()
 
-//Factory Function
+document.write("--------------------------------------------------------<br>");
 
-function myFunction(data1,data2){
-    return {
-        fname       : data1,
-        lname       : data2,
-        email       : 'venkat@gmail.com',
-        password    : '2217@anonymous',
-        getFullname(){
-            console.log(`Full Name : ${this.fname} ${this.lname}`);
+function square(){
+    for(i=1;i<=row;i++){
+        for(j=1;j<=6;j++){
+            document.write("😎 ")
         }
+        document.write("<br/>")
+    }
+
+    // * * * * * *
+    // * * * * * *
+    // * * * * * *
+    // * * * * * *
+    // * * * * * *
+    // * * * * * *
+}
+square()
+
+document.write("--------------------------------------------------------<br>");
+
+function left_Triangle(){
+    for(i=1;i<=row;i++){
+        for(j=1;j<=i;j++){
+            document.write("😍 ")
+        }
+        document.write("<br/>")
+    }
+
+    //  *         
+    //  * *
+    //  * * *
+    //  * * * *
+    //  * * * * *
+}
+left_Triangle()
+
+document.write("--------------------------------------------------------<br>");
+
+function right_Triangle(){
+    for(i=1;i<=row;i++){
+        for(k=1;k<=(row-i);k++){         // 6-1=5; 6-2=4
+            document.write("&nbsp")
+        }
+
+        for(j=1;j<=i;j++){
+            document.write("👄 ")
+        }
+        document.write("<br/>")
     }
 }
 
-let setName = myFunction("Venkat","Anonymous")
-setName.getFullname()
+right_Triangle()
 
-//Constructor Function
-
-function Myfunction(data1,data2){
-    this.uname = data1,
-    this.password = data2,
-    this.getUserData = function(){
-        console.log(`Username : ${this.uname} 
-Password : ${this.password}`);
-    }
-}
-
-let userData = new Myfunction("Anonymous","2217@Anonymous")
-userData.getUserData()
+ 
 
