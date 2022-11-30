@@ -28,7 +28,7 @@ body{
     animation-direction: alternate-reverse; */
     animation-timing-function: ease;
 }
-@keyframes box{
+/* @keyframes box{
     25%{
         transform: translateX(250px) rotateX(360deg) ;
     }
@@ -41,7 +41,7 @@ body{
     100%{
         transform: translateY(-250px) rotateX(-360deg) ;
     }
-}
+} */
 /* #box:hover{
     border-radius: 50%;
     background-color: blue;

@@ -69,7 +69,7 @@ function right_Triangle(){
         }
 
         for(j=1;j<=i;j++){
-            document.write("👄 ")
+            document.write("😂 ")
         }
         document.write("<br/>")
     }
@@ -79,3 +79,7 @@ right_Triangle()
 
  
 
+let n = 6
+for(i=0;){
+
+}
