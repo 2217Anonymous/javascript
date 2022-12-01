@@ -1,24 +1,30 @@
-const data  = document.getElementById("foodInput")
-const btn   = document.getElementById("btn")
+const data          = document.getElementById("foodInput")
+const btn           = document.getElementById("btn")
+const ul            = document.getElementById("list-group")
+const resync_btn    = document.getElementById("resync")
+const foodFragment  = document.createDocumentFragment()
 
 btn.addEventListener("click",function() {
-    const ul        = document.getElementById("list-group")
     const li        = document.createElement("li")
-    li.className    = "list-group-item disabled"
+    li.className    = "list-group-item list-group-item-action list-group-item-secondary d-flex justify-content-between align-items-center"
     li.textContent  = "💖" + data.value
-    //console.log(li);
+    const span = document.createElement("span")
+    li.append(span)
+    span.innerHTML  = `<i class="fa-solid fa-trash"></i>`
 
+    span.setAttribute("onClick","deleteItem(event)")
     ul.append(li)
 })
 
-const duplicate = document.getElementById("sync")
-const list_group = document.getElementById("list-group")
-const resync_btn = document.getElementById("resync")
 
+function deleteItem(e){
+    const removeItem = e.target.parentNode.parentNode
+    removeItem.remove()
+}
 
 resync_btn.addEventListener("click",()=>{
-
+    const duplicate  = document.getElementById("sync")
     duplicate.innerHTML = "";
-    const cloneData = list_group.cloneNode(true)
+    const cloneData = ul.cloneNode(true)
     duplicate.append(cloneData)
 })

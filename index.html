@@ -6,39 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/> 
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
     <title>Javascript</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-light align-items-center" href="#">Food Court</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    <div class="jumbotron">
         <div class="container" id="container"> 
-            <div id="form-data">
-                <div class="align-items-center">
-                    <div class="col-auto">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="foodInput" placeholder="Enter Your data">
-                        </div>                        
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div id="form-data">
+                            <div class="align-items-center">
+                                <div class="col-auto">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="foodInput" placeholder="Enter Your data">
+                                    </div>                        
+                                </div>
+                                <div class="col-auto">
+                                    <div class="mb-2">
+                                        <button id="btn" style="float:right;" class="btn btn-sm btn-primary mb-2">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <ul class="list-group" id="list-group">
+                            <li class="list-group-item active d-flex justify-content-between disabled" aria-current="true">❤ Favourite Foods</li>
+                        </ul>
+                        <br>
                     </div>
-                    <div class="col-auto">
-                        <div class="mb-2">
-                            <button id="btn" style="float:right;" class="btn btn-sm btn-primary mb-2">Submit</button>
+                    <div class="col-md-2">
+                        <center>
+                            <button id="resync" class="btn btn-sm btn-danger mb-2">Resync</button>
+                        </center>
+                    </div>
+                    <div class="col-md-5">
+                        <div id="form-data">
+                            <div class="align-items-center">
+                                <div class="col-auto">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="searchnput" placeholder="Search Your data">
+                                    </div>                        
+                                </div>
+                                <div class="col-auto">
+                                    <div class="mb-2">
+                                        <button id="btn" style="float:right;" class="btn btn-sm btn-primary mb-2">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div id="sync">
+                    
                         </div>
                     </div>
                 </div>
-            </div>
-            <br />
-            <br />
-            <ul class="list-group" id="list-group">
-                <li class="list-group-item active disabled" aria-current="true">❤ Favourite Foods</li>
-            </ul>
-            <br>
-
-            <center>
-                <button id="resync" class="btn btn-sm btn-danger mb-2">Resync</button>
-            </center>
-            <br>
-            <div id="sync">
-                
             </div>
         </div>
     </div>
@@ -48,7 +78,7 @@
 <!-- <script src="primitive.js"></script> -->
 <!-- <script src="objectclone.js"></script> -->
 <!-- <script src="arrayObject.js"></script> -->
-<!-- <script src="errorHandling.js"></script> -->
+<!-- <script src="pattern.js"></script> -->
 <script src="new.js"></script>
 </body>
 </html>
