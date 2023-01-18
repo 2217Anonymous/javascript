@@ -28,3 +28,48 @@ resync_btn.addEventListener("click",()=>{
     const cloneData = ul.cloneNode(true)
     duplicate.append(cloneData)
 })
+
+const inputt = document.getElementById("foodInput")
+const input = inputt.attributes
+
+// for(let i=0;i<=input.length;i++){
+//     console.log(input[i]);
+// }
+
+// for(let data in input){
+//     console.log(input[data]);
+// }
+
+input.forEach = ((value => console.log(value,key)))
+
+const button = document.querySelector("#btn")
+
+button.removeAttribute("class")
+
+button.style.cssText = "background:royalblue;color:#fff;border:none;padding:6px 8px;"
+console.log(button);
+
+
+const body = document.getElementById("bdy")
+const jumb = document.getElementById("jumb")
+
+function dark(){
+    body.classList.replace("bg-light","bg-dark")
+    jumb.classList.replace("bg-light","bg-dark")
+    console.log(body.classList);
+}
+function light(){
+    body.classList.replace("bg-dark","bg-light")
+    jumb.classList.replace("bg-dark","bg-light")
+    console.log(body.classList);
+}
+
+function toggle() {
+    body.classList.toggle("bg-dark")
+    jumb.classList.toggle("bg-dark")
+}
+
+setTimeout(() => {
+    body.classList.toggle("bg-dark")
+    jumb.classList.toggle("bg-dark")
+},2000)();
