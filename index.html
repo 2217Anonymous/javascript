@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/> 
-    <link rel="stylesheet" href="index.css" /> 
+    <!-- <link rel="stylesheet" href="index.css" />  -->
     <title>Javascript</title>
     <style>
         .btn{
@@ -15,17 +15,18 @@
         }
     </style>
 </head>
-<body id="bdy" class="bg-dark">
+<body id="bdy">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand text-light align-items-center" href="#">Food Court</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <button id="dark" onClick="dark()" class="btn btn-dark btn-sm">Dark</button>
+        <a href="about.html" id="dark" class="btn btn-dark btn-sm">About</a>
+        <!-- <button id="dark" onClick="dark()" class="btn btn-dark btn-sm">Dark</button>
         <button id="light" onClick="light()" class="btn btn-light btn-sm ml-2 toggle">Light</button>
-        <button id="toggle" onClick="toggle()" class="btn btn-success btn-sm ml-2" style="color:#fff;background:red;">Toggle</button>
+        <button id="toggle" onClick="toggle()" class="btn btn-success btn-sm ml-2" style="color:#fff;background:red;">Toggle</button> -->
       </nav>
-    <div id="jumb" class="bg-dark jumbotron">
+    <div id="jumb" class="jumbotron">
         <div class="container" id="container"> 
             <div class="col-md-12">
                 <div class="row">
@@ -33,7 +34,6 @@
                         <div id="form-data">
                             <div class="align-items-center">
                                 <div class="col-auto">
-                                    <h1>Anonymous</h1>
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="foodInput" placeholder="Enter Your data">
                                     </div>                        
@@ -90,5 +90,6 @@
 <!-- <script src="arrayObject.js"></script> -->
 <!-- <script src="pattern.js"></script> -->
 <script src="new.js"></script>
+<script src="delication.js"></script>
 </body>
 </html>

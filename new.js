@@ -69,7 +69,9 @@ function toggle() {
     jumb.classList.toggle("bg-dark")
 }
 
-setTimeout(() => {
-    body.classList.toggle("bg-dark")
-    jumb.classList.toggle("bg-dark")
-},2000)();
+// setTimeout(() => {
+//     body.classList.toggle("bg-dark")
+//     jumb.classList.toggle("bg-dark")
+// },2000)();
+
+
